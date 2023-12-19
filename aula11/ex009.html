@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sda</title>
+</head>
+<body>
+    <div>Qual seu País?</div>
+    <input type="text" id="txtn1">
+    <input type="button" value="verificar" onclick="clicar()">
+    <div id="res"></div>
+<script>
+    function clicar(){
+    var txtn1 = window.document.querySelector('input#txtn1')
+    var res = window.document.querySelector('div#res')
+    var pais = txtn1.value
+    res.innerHTML = `<p>Seu pais é ${pais}</p>`
+
+    if (pais.value = "USA"){
+        res.innerHTML += `<p>Vc é Brasileiro!</p>`
+    }else{
+        res.innerHTML += `<p>Vc é Vc é Estrangeiro!</p>`
+    }
+}
+
+</script>
+</body>
+</html>
