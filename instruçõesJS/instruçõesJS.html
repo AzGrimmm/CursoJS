@@ -21,6 +21,17 @@
 	s.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}) //converte valor para euro
 	s.replace(',','.') //troca um simbolo por outro, ex: , por .
 
+
+	var date = new Date()
+	date.getDate() //para pegar o dia do mes
+	date.getDay() //para pegar o dia da semana
+	date.getFullYear() //para pegar o ano atual
+
+	var date = new Date('11/08/2000')
+	var date2 = new Date('11/10/2020')
+
+	var diferenca = (date2.getTime() - date.getTime()) / (1000 * 3600 * 24)
+
 	 
 	Number.parseFloat(s) //converte para números com virgula,
 	Number.parseInt(s) //converte para número inteiro
