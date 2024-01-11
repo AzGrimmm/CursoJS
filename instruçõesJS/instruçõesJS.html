@@ -99,6 +99,71 @@
 		break;
 	}
 
+	javaScript Moderno
+
+	Template String
+	`texto texto ${var} texto `
+
+	block scopes
+	{ }
+
+	arrow functions
+	(par,par)=>{}
+
+	destructure
+	var arr = ['string',1,3,true]
+	[a,b...c] = arr
+
+	spread // adiciona valores de array no inicio de outro array
+
+	var nomes = [
+		{
+		nome: 'felipe'
+		},
+		{
+			nome: 'bruno'
+		}
+	]
+
+	const objetos = [...nomes,{
+		nome: 'julia'
+		},
+		{
+		nome: 'julia'
+		}
+	]
+
+	rest
+	function testes(...par){
+		console.log(par)
+	}
+	testes(1,2,3,4,5,6) //retorna um array
+		//ou
+	testes([1,2,3,4,5,6]) //retorna um array dentro de outro array
+
+	promise
+	function testes(){
+		return new Promise(function(resolve,reject){
+			const erro = false
+			if(erro){
+				reject('Erro....')
+			}else {
+				resolve('A promise for resolvida com sucesso!')
+			}
+		})
+	}
+	testes().then(function(res){
+		alert('')
+	}).catch(function(err){
+		alert('')
+	})
+
+	async e await //faz uma funcão esperar outra funcão ser resolvida para ser executada
+	async function testes2(){
+		await testes() 
+		alert('ola')
+	}
+
 
 </script>
 </body>
